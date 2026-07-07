@@ -1,36 +1,292 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 HireHub – Modern Job Board Application
 
-## Getting Started
+HireHub is a modern, responsive Job Board application built using **Next.js**, **React**, **TypeScript**, and **Tailwind CSS**. It provides a clean and user-friendly platform for job seekers to explore opportunities, save jobs, and apply through an interactive application form.
 
-First, run the development server:
+---
+
+# 🌐 Live Demo
+
+### 🔗 Live Application
+
+https://hirehub-job-board-ten.vercel.app/
+
+### 📂 GitHub Repository
+
+https://github.com/Beeraiah426/hirehub-job-board
+
+---
+
+# 📖 Project Overview
+
+HireHub is designed to help job seekers discover and apply for jobs from multiple companies through an intuitive and responsive interface.
+
+The project demonstrates modern frontend development practices using Next.js and includes features such as job search, filtering, saved jobs, application forms, and automated deployment.
+
+---
+
+# ✨ Features
+
+## 🏠 Home Page
+
+- Modern Hero Section
+- Responsive Navigation Bar
+- Featured Jobs
+- Company Statistics
+- About HireHub Section
+- Professional Footer
+
+---
+
+## 🔍 Smart Job Search
+
+Search jobs using:
+
+- Job Title
+- Company Name
+- Location
+- Skills
+
+Search results update instantly.
+
+---
+
+## 📂 Category Filtering
+
+Filter jobs based on skills such as:
+
+- Java
+- React
+- Spring Boot
+- DevOps
+- UI Development
+- Technical Support
+- Process Associate
+
+---
+
+## 💼 Job Details
+
+Each job contains:
+
+- Company Name
+- Job Title
+- Location
+- Salary
+- Experience
+- Job Type
+- Description
+- Responsibilities
+- Required Skills
+
+---
+
+## ❤️ Saved Jobs
+
+Users can:
+
+- Save favourite jobs
+- Remove saved jobs
+- View saved jobs on a dedicated page
+- See the saved jobs count in the navigation bar
+
+---
+
+## 📝 Apply Job
+
+Users can apply using a professional modal containing:
+
+- Full Name
+- Email Address
+- Phone Number
+- Resume Upload
+- Cover Letter
+
+Additional Features:
+
+- Duplicate application prevention
+- Success notification
+- Validation for required fields
+
+---
+
+## 🔔 Toast Notifications
+
+The application provides notifications for:
+
+- Job Saved Successfully
+- Job Removed Successfully
+- Application Submitted Successfully
+- Already Applied Warning
+
+---
+
+## 📱 Responsive Design
+
+Fully responsive for:
+
+- Desktop
+- Tablet
+- Mobile Devices
+
+---
+
+# 🛠 Tech Stack
+
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS
+- React Hot Toast
+- Local Storage
+- GitHub Actions
+- Vercel
+
+---
+
+# 📂 Project Structure
+
+```
+hirehub/
+│
+├── app/
+│   ├── jobs/
+│   ├── saved-jobs/
+│   ├── layout.tsx
+│   └── page.tsx
+│
+├── components/
+│   ├── Navbar.tsx
+│   ├── Hero.tsx
+│   ├── SearchBar.tsx
+│   ├── Categories.tsx
+│   ├── FeaturedJobs.tsx
+│   ├── JobCard.tsx
+│   ├── ApplyButton.tsx
+│   ├── ApplyModal.tsx
+│   ├── AboutHireHub.tsx
+│   └── Footer.tsx
+│
+├── data/
+│   └── jobs.ts
+│
+├── public/
+│
+├── .github/
+│   └── workflows/
+│       └── ci.yml
+│
+└── package.json
+```
+
+---
+
+# 🚀 Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/Beeraiah426/hirehub-job-board.git
+```
+
+Navigate into the project
+
+```bash
+cd hirehub-job-board
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Build for production
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Start the production server
 
-## Learn More
+```bash
+npm start
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# ⚙ CI/CD Pipeline
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project uses **GitHub Actions** for Continuous Integration.
 
-## Deploy on Vercel
+Whenever code is pushed to the **main** branch:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Dependencies are installed
+- The application is built
+- The build is verified before deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Workflow Location:
+
+```
+.github/workflows/ci.yml
+```
+
+---
+
+# ☁ Deployment
+
+The application is deployed on **Vercel**.
+
+Production URL:
+
+https://hirehub-job-board-ten.vercel.app/
+
+Every push to the **main** branch automatically triggers:
+
+- GitHub Actions workflow
+- Production build
+- Automatic deployment to Vercel
+
+---
+
+# 🚀 Future Enhancements
+
+Possible future improvements include:
+
+- User Authentication
+- Company Dashboard
+- Admin Panel
+- Backend API Integration
+- Database Support
+- Email Notifications
+- Dark Mode
+- Pagination
+- Job Sorting
+- AI Job Recommendations
+
+---
+
+# 👨‍💻 Developer
+
+**M. Beeraiah**
+
+GitHub:
+
+https://github.com/Beeraiah426
+
+---
+
+# 🙏 Acknowledgement
+
+This project was developed as part of a **Software Engineer Assessment** to demonstrate frontend development skills, responsive UI design, modern React development practices, CI/CD integration, and cloud deployment.
+
+---
+
+# ⭐ Thank You
+
+Thank you for reviewing this project.
