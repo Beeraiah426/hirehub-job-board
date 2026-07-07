@@ -64,6 +64,10 @@ export default async function JobDetails({ params }: Props) {
           <strong>⭐ Experience:</strong> {job.experience}
         </p>
 
+        <p>
+            <strong>📅 Posted:</strong> {job.postedDate}
+        </p>
+
       </div>
 
       {/* Description */}
